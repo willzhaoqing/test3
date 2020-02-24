@@ -1,0 +1,58 @@
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+        <link type="text/css"  rel="stylesheet"  href="resources/designicon.css" />
+        <link type="text/css"  rel="stylesheet"  href="resources/icons.css"  />
+        <link type="text/css"  rel="styleSheet"  href="resources/md.css" />
+        <link type="text/css"  rel="styleSheet"  href="resources/extra.css" />
+        <link type="text/css"  rel="styleSheet"  href="resources/kityminder.core.css" />
+        <link type="text/css"  rel="styleSheet"  href="resources/phone.css" />
+        <link type="text/css"  rel="styleSheet"  href="resources/desktop.css" />
+        <link type="text/css"  rel="styleSheet"  href="resources/bulma.min.css" />
+        
+        <style>
+            .v-window__container { height: 100% }
+        </style>
+        <body class="main"><h1 id="_1"><img alt="picture" src="dahua.png" /></h1>
+<h2 id="_2">大华通银内部 用户画像</h2>
+<h3 id="karan">对于Karan 来说</h3>
+<ol>
+<li>将客户资料录入系统便于管理和追踪</li>
+<li>可以设定定期的日期 拜访和联系客户 </li>
+<li>追踪客户状态 及时给于指导</li>
+</ol>
+<h3 id="helen">对于 Helen 来说</h3>
+<ol>
+<li>能看到用户的流程 , 及时给予客户指导</li>
+<li>提醒用户做一些行为 (签名, 年审) 等</li>
+<li>文档管理</li>
+</ol></body>
+                <div class="footer row  level" style="display:none" >
+                    <div class="col-3  level-item"><p>Excute:</span></div>
+                    <div class="col-9  level-item">
+                <select id="state_select" class="select"  type="name" value="" >
+                <option> None </option>
+<option> 产品侧重点.md </option>
+
+                </select>
+                </div>
+                
+                <script src="resources/details.js"></script>
+                <script src="resources/d3.v5.js"></script>
+                <script>
+                (function autoHeight(){
+                    console.log( 'in autoHeight ', document.body.clientHeight )
+                })();
+                </script>
+                
+            <script>
+            window.onload = function(){
+            window.addEventListener('message',function(ev){
+                const tb = JSON.parse(ev.data)
+                for ( let i in tb){
+                    windows[i] = tb[i]
+                }
+            })
+            }
+            </script>
+            
